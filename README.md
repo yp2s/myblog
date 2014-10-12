@@ -1,4 +1,4 @@
 myblog
 ======
 
-A blog page with HTML5 ,amp; CSS ,amp; JS ,amp; JQuery ,amp; JSon
+A blog page with HTML5,CSS,JS,JQuery,JSon
