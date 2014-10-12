@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+<link href="css/index.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+      <nav id="left"> 
+	     <ul>
+	        <li><a href="/index.html">Home</a></li>
+		    <li><a href="#">About</a></li>
+			<li><a href="#">Blog</a></li>
+		 </ul>
+	 </nav>
+     <section id="main">
+	 
+         <article>
+		    <aside class="img-border"><img></aside>
+	        <header> 
+			     <hgroup>
+				    <ul >
+				        <li class="st"></li>
+						<li class="fone"></li>
+					</ul>
+					</hgroup>
+		            <h2></h2>
+				</header>
+
+
+               <p class="pubTime"><span class="time"></span><span class="timeStr"></span></p>
+			    <p class="fonn1"></p>
+
+
+             <footer >
+                 <ul>
+                     <li><img class="discuss"></li>
+                     <li class="disNum"></li>
+                 </ul>
+             </footer>
+		  </article>
+		  
+          <article>
+		    <aside class="img-border"><img ></aside>
+	        <header> 
+			     <hgroup>
+				    <ul >
+				        <li class="st"></li>
+						<li class="fone"></li>
+					</ul>
+					</hgroup>
+		            <h2></h2>
+				</header>
+
+              <p class="pubTime"><span class="time"></span><span class="timeStr"></span></p>
+			  <p class="fonn1"></p>
+		
+
+		 <footer >
+              <ul>
+                  <li><img class="discuss"></li>
+                  <li class="disNum"></li>
+              </ul>
+          </footer>
+
+
+              <footer id="fonn2">
+
+
+              </footer>
+		  </article>
+
+	   </section>
+
+<script type="text/javascript" src="js/pgNum.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/loadData.js"></script>
+<script type="text/javascript">
+var pg = new showPages('pg');
+pg.pageCount =3;
+pg.printHtml();
+aj(pg.page);
+var clkObj = document.getElementById("ck");
+clkObj.style.background = "cornflowerblue";
+
+function getDiff(dt1) {
+    if(typeof(dt1)=="string") {
+        dt1=new Date(dt1.replace(/-/,'/'));
+        dt2=new Date();
+    }
+    var res=dt2-dt1;
+    if(isNaN(res))
+        throw Error("invalid dates arguments");
+    return res/(1000*60*60);
+}
+
+
+</script>
+</body>
+</html>
